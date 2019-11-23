@@ -1,0 +1,10 @@
+C-z = go to emacs mode/state, Emacs state is the important one. In Emacs state, all Evil key bindings are suspended and Emacs behaves as though Evil is not there at all. You can temporarily toggle Emacs state yourself by pressing C-z and this can come in handy when a mode you don’t use often has some key binding you want to access that Evil is overriding (you can figure that out by viewing the mode information in C-h m).
+new line
+new line
+new line
+new line
+
+Bob
+Dave
+Alice
+Cathy

@@ -1,0 +1,123 @@
+
+(*** define Natural Numbers ***)
+Module NatPlayground.
+
+Inductive nat : Type :=
+  | O : nat (* Zero *)
+  | S : nat -> nat. (* Successor constructor *)
+
+Compute O. (* 0, Zero *)
+Compute S O. (* 0+1 = 1 *)
+Compute S (S O). (* (0+1)+1 = 2 *)
+Check S (S O).
+
+(* example of functional programming *)
+
+Definition pred (n : nat) : nat :=
+  match n with
+    | O => O
+    | S n' => n'
+  end.
+
+(* Check the NOT pretty print of 4 *)
+Check (S (S (S (S O)))).
+
+End NatPlayground. (* ends our module/environment of Naturals *)
+
+(* Check the pretty print of 4 *)
+Check (S (S (S (S O)))).
+
+(* example of pred *)
+Compute pred 3.
+
+(*first (silly) theorem/lemma! *)
+Example pred_lemma_example: (pred 3) = 2.
+Proof.
+  (*tactics*)
+  simpl. reflexivity. 
+Qed.
+
+Example test_plus1: (plus 3 2) = 5.
+Proof. 
+  simpl. reflexivity. 
+Qed.
+
+Check (S (S (S (S O)))).
+
+Fixpoint plus (n : nat) (m : nat) : nat :=
+  match n with
+    | O => m
+    | S n' => S (plus n' m)
+  end.
+
+Compute (plus 3 2).
+
+Fixpoint evenb (n:nat) : bool :=
+  match n with
+  | O => true
+  | S O => false
+  | S (S n') => evenb n'
+  end.
+
+Definition oddb (n:nat) : bool := negb (evenb n).
+
+Example test_oddb1: 
+oddb 1 = true.
+Proof. 
+  simpl. 
+  reflexivity.
+Qed.
+
+Theorem plus_O_n : forall n : nat, 
+  0 + n = n.
+Proof.
+  intros n.
+  simpl.
+  reflexivity. 
+Qed.
+
+(*** rewrite ***)
+
+(* rewrite using Hypothesis *)
+Theorem plus_id_example : forall n m:nat,
+  n = m ->
+  n + n = m + m.
+Proof.
+  (* move both quantifiers into the context: *)
+  intros n m.
+
+  (* move the hypothesis into the context: *)
+  intros H.
+
+  (* rewrite the goal using the hypothesis: *)
+  rewrite -> H.
+
+  reflexivity.
+Qed.
+
+(* rewrite using known theorem *)
+Theorem mult_0_plus : forall n m : nat,
+  (0 + n) * m = n * m.
+Proof.
+  intros n m.
+  rewrite -> plus_O_n. (* uses: 0 + n = n *)
+  reflexivity. 
+Qed.
+
+(* Induction Fail *)
+Theorem plus_n_O_firsttry : forall n:nat,
+  n = n + 0.
+Proof.
+  intros n.
+  simpl. (* Does nothing! *)
+Abort.
+
+Theorem plus_n_O : forall n:nat, 
+  n = n + 0.
+Proof.
+  intros n. induction n as [| n' IHn'].
+  (* n = 0 *)
+  -reflexivity.
+  (* n = S n' *)
+  -simpl. rewrite <- IHn'. reflexivity. 
+Qed.

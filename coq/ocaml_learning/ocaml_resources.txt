@@ -1,0 +1,7 @@
+https://dev.realworldocaml.org/guided-tour.html#ocaml-as-a-calculator
+
+https://discuss.ocaml.org
+
+---- MLI and ML files
+
+https://dev.realworldocaml.org/files-modules-and-programs.html

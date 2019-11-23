@@ -1,0 +1,755 @@
+DIGEST a55f608fb64012cac5dae888c9bd1eda
+Fmy_bool
+ind 12:15 <> bool
+constr 30:33 <> true
+constr 45:49 <> false
+R37:40 my_bool <> bool ind
+R53:56 my_bool <> bool ind
+def 71:74 <> negb
+R79:82 my_bool <> bool ind
+R87:90 my_bool <> bool ind
+R103:103 my_bool <> b var
+R113:116 my_bool <> true constr
+R121:125 my_bool <> false constr
+R130:134 my_bool <> false constr
+R139:142 my_bool <> true constr
+def 161:164 <> andb
+R170:173 my_bool <> bool ind
+R180:183 my_bool <> bool ind
+R188:191 my_bool <> bool ind
+R204:205 my_bool <> b1 var
+R215:218 my_bool <> true constr
+R223:224 my_bool <> b2 var
+R229:233 my_bool <> false constr
+R238:239 my_bool <> b1 var
+def 258:260 <> orb
+R266:269 my_bool <> bool ind
+R276:279 my_bool <> bool ind
+R284:287 my_bool <> bool ind
+R300:301 my_bool <> b1 var
+R311:314 my_bool <> true constr
+R319:320 my_bool <> b1 var
+R325:329 my_bool <> false constr
+R334:335 my_bool <> b2 var
+def 354:356 <> xrb
+R362:365 my_bool <> bool ind
+R372:375 my_bool <> bool ind
+R380:383 my_bool <> bool ind
+R396:397 my_bool <> b1 var
+R407:411 my_bool <> false constr
+R416:417 my_bool <> b2 var
+R422:425 my_bool <> true constr
+R430:433 my_bool <> negb def
+R435:436 my_bool <> b2 var
+R453:455 my_bool <> xrb def
+R463:467 my_bool <> false constr
+R457:461 my_bool <> false constr
+R480:482 my_bool <> xrb def
+R489:492 my_bool <> true constr
+R484:487 my_bool <> true constr
+def 505:513 <> test_orb1
+R516:516 Coq.Init.Logic <> :type_scope:x_'='_x not
+R531:534 Coq.Init.Logic <> :type_scope:x_'='_x not
+R517:519 my_bool <> orb def
+R526:530 my_bool <> false constr
+R521:524 my_bool <> true constr
+R535:538 my_bool <> true constr
+def 581:589 <> test_orb2
+R592:592 Coq.Init.Logic <> :type_scope:x_'='_x not
+R608:611 Coq.Init.Logic <> :type_scope:x_'='_x not
+R593:595 my_bool <> orb def
+R603:607 my_bool <> false constr
+R597:601 my_bool <> false constr
+R612:616 my_bool <> false constr
+def 659:667 <> test_orb3
+R670:670 Coq.Init.Logic <> :type_scope:x_'='_x not
+R685:688 Coq.Init.Logic <> :type_scope:x_'='_x not
+R671:673 my_bool <> orb def
+R681:684 my_bool <> true constr
+R675:679 my_bool <> false constr
+R689:692 my_bool <> true constr
+def 735:743 <> test_orb4
+R746:746 Coq.Init.Logic <> :type_scope:x_'='_x not
+R760:763 Coq.Init.Logic <> :type_scope:x_'='_x not
+R747:749 my_bool <> orb def
+R756:759 my_bool <> true constr
+R751:754 my_bool <> true constr
+R764:767 my_bool <> true constr
+def 811:819 <> test_xrb1
+R822:822 Coq.Init.Logic <> :type_scope:x_'='_x not
+R838:841 Coq.Init.Logic <> :type_scope:x_'='_x not
+R823:825 my_bool <> xrb def
+R833:837 my_bool <> false constr
+R827:831 my_bool <> false constr
+R842:846 my_bool <> false constr
+def 889:897 <> test_xrb2
+R900:900 Coq.Init.Logic <> :type_scope:x_'='_x not
+R915:918 Coq.Init.Logic <> :type_scope:x_'='_x not
+R901:903 my_bool <> xrb def
+R911:914 my_bool <> true constr
+R905:909 my_bool <> false constr
+R919:922 my_bool <> true constr
+def 965:973 <> test_xrb3
+R976:976 Coq.Init.Logic <> :type_scope:x_'='_x not
+R991:994 Coq.Init.Logic <> :type_scope:x_'='_x not
+R977:979 my_bool <> xrb def
+R986:990 my_bool <> false constr
+R981:984 my_bool <> true constr
+R995:998 my_bool <> true constr
+def 1041:1049 <> text_xrb4
+R1052:1052 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1066:1069 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1053:1055 my_bool <> xrb def
+R1062:1065 my_bool <> true constr
+R1057:1060 my_bool <> true constr
+R1070:1074 my_bool <> false constr
+R1132:1135 my_bool <> andb def
+not 1119:1119 <> ::x_'&&'_x
+R1165:1167 my_bool <> orb def
+not 1152:1152 <> ::x_'||'_x
+def 1184:1192 <> test_orb5
+R1217:1219 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1209:1212 my_bool <> ::x_'||'_x not
+R1200:1203 my_bool <> ::x_'||'_x not
+R1195:1199 my_bool <> false constr
+R1204:1208 my_bool <> false constr
+R1213:1216 my_bool <> true constr
+R1220:1223 my_bool <> true constr
+def 1266:1273 <> test_arb
+R1297:1299 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1288:1291 my_bool <> ::x_'&&'_x not
+R1280:1283 my_bool <> ::x_'&&'_x not
+R1276:1279 my_bool <> true constr
+R1284:1287 my_bool <> true constr
+R1292:1296 my_bool <> false constr
+R1300:1304 my_bool <> false constr
+def 1351:1355 <> nandb
+R1361:1364 my_bool <> bool ind
+R1371:1374 my_bool <> bool ind
+R1379:1382 my_bool <> bool ind
+R1390:1393 my_bool <> negb def
+R1396:1399 my_bool <> andb def
+R1404:1405 my_bool <> b2 var
+R1401:1402 my_bool <> b1 var
+def 1419:1429 <> test_nandb1
+R1432:1432 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1449:1452 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1433:1437 my_bool <> nandb def
+R1444:1448 my_bool <> false constr
+R1439:1442 my_bool <> true constr
+R1453:1456 my_bool <> true constr
+def 1492:1502 <> test_nandb2
+R1505:1505 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1523:1526 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1506:1510 my_bool <> nandb def
+R1518:1522 my_bool <> false constr
+R1512:1516 my_bool <> false constr
+R1527:1530 my_bool <> true constr
+def 1566:1576 <> test_nandb3
+R1579:1579 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1596:1599 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1580:1584 my_bool <> nandb def
+R1592:1595 my_bool <> true constr
+R1586:1590 my_bool <> false constr
+R1600:1603 my_bool <> true constr
+def 1639:1649 <> test_nandb4
+R1652:1652 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1668:1671 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1653:1657 my_bool <> nandb def
+R1664:1667 my_bool <> true constr
+R1659:1662 my_bool <> true constr
+R1672:1676 my_bool <> false constr
+def 1716:1720 <> andb3
+R1726:1729 my_bool <> bool ind
+R1736:1739 my_bool <> bool ind
+R1746:1749 my_bool <> bool ind
+R1754:1757 my_bool <> bool ind
+R1764:1767 my_bool <> andb def
+R1782:1783 my_bool <> b3 var
+R1770:1773 my_bool <> andb def
+R1778:1779 my_bool <> b2 var
+R1775:1776 my_bool <> b1 var
+R1796:1799 my_bool <> andb def
+R1806:1809 my_bool <> true constr
+R1801:1804 my_bool <> true constr
+R1820:1824 my_bool <> andb3 def
+R1836:1839 my_bool <> true constr
+R1831:1834 my_bool <> true constr
+R1826:1829 my_bool <> true constr
+def 1851:1861 <> test_andb31
+R1864:1864 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1885:1888 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1865:1869 my_bool <> andb3 def
+R1881:1884 my_bool <> true constr
+R1876:1879 my_bool <> true constr
+R1871:1874 my_bool <> true constr
+R1889:1892 my_bool <> true constr
+def 1928:1938 <> test_andb32
+R1941:1941 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1963:1966 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1942:1946 my_bool <> andb3 def
+R1959:1962 my_bool <> true constr
+R1954:1957 my_bool <> true constr
+R1948:1952 my_bool <> false constr
+R1967:1971 my_bool <> false constr
+def 2007:2017 <> test_andb33
+R2020:2020 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2042:2045 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2021:2025 my_bool <> andb3 def
+R2038:2041 my_bool <> true constr
+R2032:2036 my_bool <> false constr
+R2027:2030 my_bool <> true constr
+R2046:2050 my_bool <> false constr
+def 2086:2096 <> test_andb34
+R2099:2099 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2121:2124 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2100:2104 my_bool <> andb3 def
+R2116:2120 my_bool <> false constr
+R2111:2114 my_bool <> true constr
+R2106:2109 my_bool <> true constr
+R2125:2129 my_bool <> false constr
+def 2165:2175 <> test_andb35
+R2178:2178 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2201:2204 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2179:2183 my_bool <> andb3 def
+R2197:2200 my_bool <> true constr
+R2191:2195 my_bool <> false constr
+R2185:2189 my_bool <> false constr
+R2205:2209 my_bool <> false constr
+def 2245:2255 <> test_andb36
+R2258:2258 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2281:2284 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2259:2263 my_bool <> andb3 def
+R2276:2280 my_bool <> false constr
+R2271:2274 my_bool <> true constr
+R2265:2269 my_bool <> false constr
+R2285:2289 my_bool <> false constr
+def 2325:2334 <> test_and37
+R2337:2337 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2360:2363 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2338:2342 my_bool <> andb3 def
+R2355:2359 my_bool <> false constr
+R2349:2353 my_bool <> false constr
+R2344:2347 my_bool <> true constr
+R2364:2368 my_bool <> false constr
+def 2404:2413 <> test_and38
+R2416:2416 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2440:2443 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2417:2421 my_bool <> andb3 def
+R2435:2439 my_bool <> false constr
+R2429:2433 my_bool <> false constr
+R2423:2427 my_bool <> false constr
+R2444:2448 my_bool <> false constr
+R2483:2486 my_bool <> true constr
+R2495:2498 my_bool <> negb def
+R2500:2503 my_bool <> true constr
+R2512:2515 my_bool <> negb def
+R2524:2527 my_bool <> andb def
+ind 2555:2557 <> rgb
+constr 2573:2575 <> red
+constr 2587:2591 <> green
+constr 2603:2606 <> blue
+R2579:2581 my_bool <> rgb ind
+R2595:2597 my_bool <> rgb ind
+R2610:2612 my_bool <> rgb ind
+ind 2626:2630 <> color
+constr 2646:2650 <> black
+constr 2664:2668 <> white
+constr 2682:2688 <> primary
+R2654:2658 my_bool <> color ind
+R2672:2676 my_bool <> color ind
+R2695:2698 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2699:2703 my_bool <> color ind
+R2692:2694 my_bool <> rgb ind
+mod 2714:2722 <> color_lib
+def 2737:2746 color_lib monochrome
+R2753:2757 my_bool <> color ind
+R2762:2765 my_bool <> bool ind
+R2817:2817 my_bool <> c var
+R2828:2832 my_bool <> black constr
+R2837:2840 my_bool <> true constr
+R2846:2850 my_bool <> white constr
+R2855:2858 my_bool <> true constr
+R2864:2870 my_bool <> primary constr
+R2877:2881 my_bool <> false constr
+def 2970:2974 color_lib isred
+R2981:2985 my_bool <> color ind
+R2990:2993 my_bool <> bool ind
+R3006:3006 my_bool <> c var
+R3017:3021 my_bool <> black constr
+R3026:3030 my_bool <> false constr
+R3036:3040 my_bool <> white constr
+R3045:3049 my_bool <> false constr
+R3055:3061 my_bool <> primary constr
+R3063:3065 my_bool <> red constr
+R3070:3073 my_bool <> true constr
+R3079:3085 my_bool <> primary constr
+R3092:3096 my_bool <> false constr
+R3110:3118 my_bool color_lib <> mod
+R3130:3132 my_bool <> red constr
+R3143:3147 my_bool <> black constr
+R3158:3164 my_bool <> primary constr
+R3177:3183 my_bool <> primary constr
+R3185:3187 my_bool <> red constr
+R3196:3202 my_bool <> primary constr
+R3212:3218 my_bool <> primary constr
+R3231:3250 my_bool <> monochrome def
+R3253:3259 my_bool <> primary constr
+R3273:3292 my_bool <> monochrome def
+R3294:3298 my_bool <> black constr
+R3309:3323 my_bool <> isred def
+R3326:3332 my_bool <> primary constr
+R3334:3336 my_bool <> red constr
+mod 3355:3367 <> NatPlayground
+ind 3381:3383 NatPlayground nat
+constr 3399:3399 NatPlayground O
+constr 3411:3411 NatPlayground S
+R3403:3405 my_bool <> nat ind
+R3418:3421 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3422:3424 my_bool <> nat ind
+R3415:3417 my_bool <> nat ind
+def 3439:3442 NatPlayground pred
+R3449:3451 my_bool NatPlayground nat ind
+R3456:3458 my_bool NatPlayground nat ind
+R3471:3471 my_bool <> n var
+R3484:3484 my_bool NatPlayground O constr
+R3489:3489 my_bool NatPlayground O constr
+R3497:3497 my_bool NatPlayground S constr
+R3535:3535 my_bool NatPlayground O constr
+R3557:3557 my_bool NatPlayground S constr
+R3559:3559 my_bool NatPlayground O constr
+R3570:3570 my_bool NatPlayground S constr
+R3573:3573 my_bool NatPlayground S constr
+R3575:3575 my_bool NatPlayground O constr
+R3613:3613 my_bool NatPlayground S constr
+R3616:3616 my_bool NatPlayground S constr
+R3619:3619 my_bool NatPlayground S constr
+R3622:3622 my_bool NatPlayground S constr
+R3624:3624 my_bool NatPlayground O constr
+R3637:3637 my_bool NatPlayground S constr
+R3640:3640 my_bool NatPlayground S constr
+R3642:3642 my_bool NatPlayground O constr
+R3655:3658 my_bool NatPlayground pred def
+R3660:3660 my_bool NatPlayground O constr
+R3672:3675 my_bool NatPlayground pred def
+R3679:3679 my_bool NatPlayground S constr
+R3682:3682 my_bool NatPlayground S constr
+R3684:3684 my_bool NatPlayground O constr
+R3696:3708 my_bool NatPlayground <> mod
+R3718:3718 Coq.Init.Datatypes <> S constr
+R3720:3720 Coq.Init.Datatypes <> O constr
+R3731:3731 Coq.Init.Datatypes <> S constr
+R3734:3734 Coq.Init.Datatypes <> S constr
+R3736:3736 Coq.Init.Datatypes <> O constr
+def 3755:3762 <> minustwo
+R3769:3771 Coq.Init.Datatypes <> nat ind
+R3776:3778 Coq.Init.Datatypes <> nat ind
+R3791:3791 my_bool <> n var
+R3804:3804 Coq.Init.Datatypes <> O constr
+R3809:3809 Coq.Init.Datatypes <> O constr
+R3817:3817 Coq.Init.Datatypes <> S constr
+R3819:3819 Coq.Init.Datatypes <> O constr
+R3824:3824 Coq.Init.Datatypes <> O constr
+R3832:3832 Coq.Init.Datatypes <> S constr
+R3835:3835 Coq.Init.Datatypes <> S constr
+R3864:3871 my_bool <> minustwo def
+def 3890:3899 <> minusthree
+R3906:3908 Coq.Init.Datatypes <> nat ind
+R3913:3915 Coq.Init.Datatypes <> nat ind
+R3928:3928 my_bool <> n var
+R3941:3941 Coq.Init.Datatypes <> O constr
+R3946:3946 Coq.Init.Datatypes <> O constr
+R3954:3954 Coq.Init.Datatypes <> S constr
+R3956:3956 Coq.Init.Datatypes <> O constr
+R3961:3961 Coq.Init.Datatypes <> O constr
+R3969:3969 Coq.Init.Datatypes <> S constr
+R3973:3973 Coq.Init.Datatypes <> S constr
+R3975:3975 Coq.Init.Datatypes <> O constr
+R3982:3982 Coq.Init.Datatypes <> O constr
+R3990:3990 Coq.Init.Datatypes <> S constr
+R3994:3994 Coq.Init.Datatypes <> S constr
+R3998:3998 Coq.Init.Datatypes <> S constr
+R4030:4039 my_bool <> minusthree def
+R4055:4064 my_bool <> minusthree def
+R4080:4089 my_bool <> minusthree def
+R4105:4114 my_bool <> minusthree def
+R4130:4139 my_bool <> minusthree def
+R4155:4164 my_bool <> minusthree def
+R4178:4178 Coq.Init.Datatypes <> S constr
+R4187:4190 Coq.Init.Peano <> pred syndef
+R4199:4206 my_bool <> minustwo def
+def 4219:4223 <> evenb
+R4228:4230 Coq.Init.Datatypes <> nat ind
+R4235:4238 my_bool <> bool ind
+R4251:4251 my_bool <> n var
+R4262:4262 Coq.Init.Datatypes <> O constr
+R4267:4270 my_bool <> true constr
+R4276:4276 Coq.Init.Datatypes <> S constr
+R4278:4278 Coq.Init.Datatypes <> O constr
+R4283:4287 my_bool <> false constr
+R4293:4293 Coq.Init.Datatypes <> S constr
+R4296:4296 Coq.Init.Datatypes <> S constr
+R4305:4309 my_bool <> evenb def
+def 4370:4373 <> oddb
+R4378:4380 Coq.Init.Datatypes <> nat ind
+R4385:4388 my_bool <> bool ind
+R4393:4396 my_bool <> negb def
+R4399:4403 my_bool <> evenb def
+R4405:4405 my_bool <> n var
+def 4418:4427 <> test_oddb1
+R4436:4438 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4430:4433 my_bool <> oddb def
+R4439:4442 my_bool <> true constr
+def 4485:4494 <> test_oddb2
+R4503:4505 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4497:4500 my_bool <> oddb def
+R4506:4510 my_bool <> false constr
+def 4553:4562 <> test_even1
+R4572:4574 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4565:4569 my_bool <> evenb def
+R4575:4578 my_bool <> true constr
+def 4621:4630 <> test_even2
+R4641:4643 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4633:4637 my_bool <> evenb def
+R4644:4648 my_bool <> false constr
+def 4691:4700 <> test_even3
+R4711:4713 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4703:4707 my_bool <> evenb def
+R4714:4718 my_bool <> false constr
+mod 4761:4774 <> NatPlayground2
+def 4787:4790 NatPlayground2 plus
+R4797:4799 Coq.Init.Datatypes <> nat ind
+R4807:4809 Coq.Init.Datatypes <> nat ind
+R4814:4816 Coq.Init.Datatypes <> nat ind
+R4829:4829 my_bool <> n var
+R4842:4842 Coq.Init.Datatypes <> O constr
+R4847:4847 my_bool <> m var
+R4855:4855 Coq.Init.Datatypes <> S constr
+R4863:4863 Coq.Init.Datatypes <> S constr
+R4866:4869 my_bool <> plus def
+R4874:4874 my_bool <> m var
+R4981:4984 my_bool NatPlayground2 plus def
+def 5321:5324 NatPlayground2 mult
+R5333:5335 Coq.Init.Datatypes <> nat ind
+R5340:5342 Coq.Init.Datatypes <> nat ind
+R5355:5355 my_bool <> n var
+R5368:5368 Coq.Init.Datatypes <> O constr
+R5373:5373 Coq.Init.Datatypes <> O constr
+R5381:5381 Coq.Init.Datatypes <> S constr
+R5389:5392 my_bool NatPlayground2 plus def
+R5397:5400 my_bool <> mult def
+R5405:5405 my_bool <> m var
+R5394:5394 my_bool <> m var
+def 5424:5433 NatPlayground2 test_mult1
+R5436:5436 Coq.Init.Logic <> :type_scope:x_'='_x not
+R5445:5448 Coq.Init.Logic <> :type_scope:x_'='_x not
+R5437:5440 my_bool NatPlayground2 mult def
+def 5494:5498 NatPlayground2 minus
+R5505:5507 Coq.Init.Datatypes <> nat ind
+R5512:5514 Coq.Init.Datatypes <> nat ind
+R5530:5530 my_bool <> m var
+R5527:5527 my_bool <> n var
+R5541:5541 Coq.Init.Datatypes <> O constr
+R5550:5550 Coq.Init.Datatypes <> O constr
+R5608:5608 Coq.Init.Datatypes <> S constr
+R5614:5614 Coq.Init.Datatypes <> O constr
+R5619:5619 my_bool <> n var
+R5692:5692 Coq.Init.Datatypes <> S constr
+R5698:5698 Coq.Init.Datatypes <> S constr
+R5706:5710 my_bool <> minus def
+R5766:5770 my_bool NatPlayground2 minus def
+R5790:5794 my_bool NatPlayground2 minus def
+R5809:5822 my_bool NatPlayground2 <> mod
+def 5835:5837 <> exp
+R5853:5855 Coq.Init.Datatypes <> nat ind
+R5860:5862 Coq.Init.Datatypes <> nat ind
+R5875:5879 my_bool <> power var
+R5892:5892 Coq.Init.Datatypes <> O constr
+R5897:5897 Coq.Init.Datatypes <> S constr
+R5899:5899 Coq.Init.Datatypes <> O constr
+R5907:5907 Coq.Init.Datatypes <> S constr
+R5914:5917 Coq.Init.Peano <> mult syndef
+R5925:5927 my_bool <> exp def
+R5929:5932 my_bool <> base var
+R5919:5922 my_bool <> base var
+def 5976:5984 <> factorial
+R5989:5991 Coq.Init.Datatypes <> nat ind
+R5996:5998 Coq.Init.Datatypes <> nat ind
+R6011:6011 my_bool <> n var
+R6024:6024 Coq.Init.Datatypes <> O constr
+R6029:6029 Coq.Init.Datatypes <> S constr
+R6031:6031 Coq.Init.Datatypes <> O constr
+R6039:6039 Coq.Init.Datatypes <> S constr
+R6047:6050 Coq.Init.Peano <> mult syndef
+R6055:6063 my_bool <> factorial def
+R6052:6052 my_bool <> n var
+def 6085:6099 <> test_factorial1
+R6102:6102 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6114:6117 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6103:6111 my_bool <> factorial def
+def 6161:6175 <> test_factorial2
+R6178:6178 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6190:6193 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6179:6187 my_bool <> factorial def
+R6252:6255 Coq.Init.Peano <> plus syndef
+not 6240:6240 <> :nat_scope:x_'+'_x
+R6377:6381 Coq.Init.Peano <> minus syndef
+not 6365:6365 <> :nat_scope:x_'-'_x
+R6502:6505 Coq.Init.Peano <> mult syndef
+not 6490:6490 <> :nat_scope:x_'*'_x
+R6613:6613 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R6619:6622 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R6615:6617 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R6636:6636 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R6642:6645 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R6638:6640 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+def 6660:6666 <> beq_nat
+R6675:6677 Coq.Init.Datatypes <> nat ind
+R6682:6685 my_bool <> bool ind
+R6698:6698 my_bool <> n var
+R6709:6709 Coq.Init.Datatypes <> O constr
+R6720:6720 my_bool <> m var
+R6738:6738 Coq.Init.Datatypes <> O constr
+R6743:6746 my_bool <> true constr
+R6759:6759 Coq.Init.Datatypes <> S constr
+R6767:6771 my_bool <> false constr
+R6790:6790 Coq.Init.Datatypes <> S constr
+R6804:6804 my_bool <> m var
+R6825:6825 Coq.Init.Datatypes <> O constr
+R6830:6834 my_bool <> false constr
+R6850:6850 Coq.Init.Datatypes <> S constr
+R6858:6864 my_bool <> beq_nat def
+def 6905:6907 <> leb
+R6916:6918 Coq.Init.Datatypes <> nat ind
+R6923:6926 my_bool <> bool ind
+R6939:6939 my_bool <> n var
+R6950:6950 Coq.Init.Datatypes <> O constr
+R6955:6958 my_bool <> true constr
+R6964:6964 Coq.Init.Datatypes <> S constr
+R6984:6984 my_bool <> m var
+R6999:6999 Coq.Init.Datatypes <> O constr
+R7004:7008 my_bool <> false constr
+R7018:7018 Coq.Init.Datatypes <> S constr
+R7026:7028 my_bool <> leb def
+def 7062:7070 <> test_leb1
+R7073:7073 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7081:7084 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7074:7076 my_bool <> leb def
+R7085:7088 my_bool <> true constr
+def 7131:7139 <> test_leb2
+R7142:7142 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7150:7153 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7143:7145 my_bool <> leb def
+R7154:7157 my_bool <> true constr
+def 7200:7208 <> test_leb3
+R7211:7211 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7219:7222 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7212:7214 my_bool <> leb def
+R7223:7227 my_bool <> false constr
+R7271:7274 my_bool <> andb def
+R7281:7284 my_bool <> true constr
+R7276:7279 my_bool <> true constr
+def 7300:7306 <> blt_nat
+R7315:7317 Coq.Init.Datatypes <> nat ind
+R7322:7325 my_bool <> bool ind
+R7334:7337 my_bool <> andb def
+R7350:7353 my_bool <> negb def
+R7356:7362 my_bool <> beq_nat def
+R7366:7366 my_bool <> m var
+R7364:7364 my_bool <> n var
+R7340:7342 my_bool <> leb def
+R7346:7346 my_bool <> m var
+R7344:7344 my_bool <> n var
+R7385:7391 my_bool <> blt_nat def
+R7406:7412 my_bool <> blt_nat def
+def 7428:7440 <> test_lt_nat00
+R7443:7443 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7455:7458 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7444:7450 my_bool <> blt_nat def
+R7459:7462 my_bool <> true constr
+def 7505:7516 <> test_lt_nat0
+R7519:7519 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7531:7534 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7520:7526 my_bool <> blt_nat def
+R7535:7539 my_bool <> false constr
+def 7582:7594 <> test_blt_nat1
+R7597:7597 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7609:7612 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7598:7604 my_bool <> blt_nat def
+R7613:7617 my_bool <> false constr
+def 7660:7672 <> test_blt_nat2
+R7675:7675 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7687:7690 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7676:7682 my_bool <> blt_nat def
+R7691:7694 my_bool <> true constr
+def 7737:7749 <> test_blt_nat3
+R7752:7752 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7764:7767 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7753:7759 my_bool <> blt_nat def
+R7768:7772 my_bool <> false constr
+prf 7847:7854 <> plus_O_n
+R7869:7871 Coq.Init.Datatypes <> nat ind
+R7879:7881 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7875:7877 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R7878:7878 my_bool <> n var
+R7882:7882 my_bool <> n var
+prf 7938:7945 <> plus_1_l
+R7958:7960 Coq.Init.Datatypes <> nat ind
+R7968:7970 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7964:7966 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R7967:7967 my_bool <> n var
+R7971:7971 Coq.Init.Datatypes <> S constr
+R7973:7973 my_bool <> n var
+prf 8029:8036 <> mult_0_l
+R8049:8051 Coq.Init.Datatypes <> nat ind
+R8059:8061 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8055:8057 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8058:8058 my_bool <> n var
+prf 8118:8132 <> plus_id_example
+R8147:8149 Coq.Init.Datatypes <> nat ind
+R8159:8164 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R8170:8172 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8166:8168 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R8165:8165 my_bool <> n var
+R8169:8169 my_bool <> n var
+R8174:8176 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R8173:8173 my_bool <> m var
+R8177:8177 my_bool <> m var
+R8155:8157 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8154:8154 my_bool <> n var
+R8158:8158 my_bool <> m var
+prf 8509:8524 <> plus_id_exercise
+R8543:8545 Coq.Init.Datatypes <> nat ind
+R8555:8558 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R8564:8567 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R8573:8575 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8569:8571 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R8568:8568 my_bool <> n var
+R8572:8572 my_bool <> m var
+R8577:8579 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R8576:8576 my_bool <> m var
+R8580:8580 my_bool <> o var
+R8560:8562 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8559:8559 my_bool <> m var
+R8563:8563 my_bool <> o var
+R8551:8553 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8550:8550 my_bool <> n var
+R8554:8554 my_bool <> m var
+prf 8695:8705 <> mult_0_plus
+R8722:8724 Coq.Init.Datatypes <> nat ind
+R8740:8742 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8729:8729 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8735:8738 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8731:8733 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R8734:8734 my_bool <> n var
+R8739:8739 my_bool <> m var
+R8744:8746 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8743:8743 my_bool <> n var
+R8747:8747 my_bool <> m var
+R8784:8791 my_bool <> plus_O_n thm
+R8784:8791 my_bool <> plus_O_n thm
+R8784:8791 my_bool <> plus_O_n thm
+prf 8840:8847 <> mult_S_1
+R8864:8866 Coq.Init.Datatypes <> nat ind
+R8878:8883 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R8895:8897 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8885:8888 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8894:8894 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8884:8884 my_bool <> m var
+R8890:8892 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R8893:8893 my_bool <> n var
+R8899:8901 Coq.Init.Peano <> :nat_scope:x_'*'_x not
+R8898:8898 my_bool <> m var
+R8902:8902 my_bool <> m var
+R8872:8874 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8871:8871 my_bool <> m var
+R8875:8875 Coq.Init.Datatypes <> S constr
+R8877:8877 my_bool <> n var
+prf 9015:9035 <> plus_1_neq_0_firsttry
+R9050:9052 Coq.Init.Datatypes <> nat ind
+R9074:9076 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9057:9063 my_bool <> beq_nat def
+R9067:9069 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R9066:9066 my_bool <> n var
+R9077:9081 my_bool <> false constr
+prf 9148:9159 <> plus_1_neq_0
+R9174:9176 Coq.Init.Datatypes <> nat ind
+R9198:9200 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9181:9187 my_bool <> beq_nat def
+R9191:9193 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R9190:9190 my_bool <> n var
+R9201:9205 my_bool <> false constr
+R9269:9276 my_bool <> plus_O_n thm
+R9269:9276 my_bool <> plus_O_n thm
+R9269:9276 my_bool <> plus_O_n thm
+prf 9347:9361 <> negb_involutive
+R9376:9379 my_bool <> bool ind
+R9397:9399 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9384:9387 my_bool <> negb def
+R9390:9393 my_bool <> negb def
+R9395:9395 my_bool <> b var
+R9400:9400 my_bool <> b var
+prf 9497:9512 <> andb_commutative
+R9536:9538 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9528:9531 my_bool <> andb def
+R9535:9535 my_bool <> c var
+R9533:9533 my_bool <> b var
+R9539:9542 my_bool <> andb def
+R9546:9546 my_bool <> b var
+R9544:9544 my_bool <> c var
+prf 9704:9720 <> andb_commutative'
+R9744:9746 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9736:9739 my_bool <> andb def
+R9743:9743 my_bool <> c var
+R9741:9741 my_bool <> b var
+R9747:9750 my_bool <> andb def
+R9754:9754 my_bool <> b var
+R9752:9752 my_bool <> c var
+prf 9908:9921 <> andb3_exchange
+R9958:9960 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9941:9944 my_bool <> andb def
+R9957:9957 my_bool <> d var
+R9947:9950 my_bool <> andb def
+R9954:9954 my_bool <> c var
+R9952:9952 my_bool <> b var
+R9961:9964 my_bool <> andb def
+R9977:9977 my_bool <> c var
+R9967:9970 my_bool <> andb def
+R9974:9974 my_bool <> d var
+R9972:9972 my_bool <> b var
+prf 10309:10321 <> plus_1_neq_0'
+R10336:10338 Coq.Init.Datatypes <> nat ind
+R10360:10362 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10343:10349 my_bool <> beq_nat def
+R10353:10355 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R10352:10352 my_bool <> n var
+R10363:10367 my_bool <> false constr
+prf 10441:10458 <> andb_commutative''
+R10484:10486 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10476:10479 my_bool <> andb def
+R10483:10483 my_bool <> c var
+R10481:10481 my_bool <> b var
+R10487:10490 my_bool <> andb def
+R10494:10494 my_bool <> b var
+R10492:10492 my_bool <> c var
+prf 10657:10671 <> andb_true_elim2
+R10688:10691 my_bool <> bool ind
+R10711:10714 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R10716:10718 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10715:10715 my_bool <> c var
+R10719:10722 my_bool <> true constr
+R10704:10706 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10696:10699 my_bool <> andb def
+R10703:10703 my_bool <> c var
+R10701:10701 my_bool <> b var
+R10707:10710 my_bool <> true constr
+prf 10936:10951 <> zero_nbeq_plus_1
+R10966:10968 Coq.Init.Datatypes <> nat ind
+R10990:10992 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10973:10979 my_bool <> beq_nat def
+R10985:10987 Coq.Init.Peano <> :nat_scope:x_'+'_x not
+R10984:10984 my_bool <> n var
+R10993:10997 my_bool <> false constr
+R11049:11056 my_bool <> plus_O_n thm
+R11049:11056 my_bool <> plus_O_n thm
+R11049:11056 my_bool <> plus_O_n thm
